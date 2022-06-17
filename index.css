@@ -1,5 +1,6 @@
-* {
-	background: ghostwhite;
+body {
+	background: linear-gradient(red, orange, green, blue);
+	color: ghostwhite;
 }
 
 p {
