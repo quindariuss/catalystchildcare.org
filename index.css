@@ -2,6 +2,11 @@
 	background: ghostwhite;
 }
 
+p {
+	max-width: 500;
+}
+
 img {
- max-width: 75%;	
+ max-width: 500;	
+width: 75%; 
 }
