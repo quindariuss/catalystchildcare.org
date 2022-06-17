@@ -1,3 +1,7 @@
 * {
 	background: ghostwhite;
 }
+
+img {
+ max-width: 75%;	
+}
