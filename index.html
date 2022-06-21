@@ -1,78 +1,132 @@
 <head>
-	<title>
-		Catalyst Childcare
-	</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="index.css" />
+  <title>Catalyst Childcare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/styles/index.css" />
 </head>
 <body>
-	<header style="--r1:130%;--r2:71.5%">
-		<h1>
-			Catalyst Childcare
-		</h1>
-		<a>
-			Why ABC Plus
-		</a>
-		<a>
-			How to Use
-		</a>
-		<a>
-			Download
-		</a>
-		<a>
-			Contact
-		</a>
-		<h3>
-			Bringing out the best in our children.
-		</h3>
-		<button onclick="location.href='https://testflight.apple.com/join/8uGiLiSG'">
-			Download
-		</button>
-	</header>
-<center>
-		<article>
-			<aside style="float: left; width: 30%">
-		<img src="logo.png" />
-			</aside>
-		<section>
-			<h3>
-				Why we built ABC Plus
-			</h3>
-			<p>
-				Gubergren et sed partiendo necessitatibus partem ex nisl at duo cibo eu vis brute vix. Quas pro nonumy et salutandi officiis nam at illud ea sanctus nec solum. Legere sea an causae referrentur ei quas te has vero timeam ea sale sed in. Ad essent argumentum soleat repudiandae at eu persecuti et laudem nisl assum ne placerat dicta his. At petentium impetus sea homero harum ne atomorum vis facilisi persius ad diceret sapientem mea. At eos deterruisset saepe vel adipiscing has in ea ea soluta duo philosophia.
-			</p>
-			<section style="background: rgb(242, 240, 234)">
-			<h3>
-				How you should use the ABC Plus
-			</h3>
-			<p>
-				Nostrud nobis an appareat ut noluisse everti has aliquip vivendum ne ne aeque latine iisque. Qui decore velit cotidieque duo et an consequuntur elitr laoreet mollis integre perpetua eam voluptatibus. Mea ea an ad vis elaboraret oportere id qui eum mea falli dicta cu alienum et. Eum vocibus vidit deserunt id an id mea sapientem nec dissentias ex veniam prima et ornatus moderatius. Quem alii ubique mei utroque ad an te deleniti similique dicunt porro eu eam ipsum. Commune mel cu consequat mea est duo vix ponderum nec te lorem numquam ut inani honestatis. Tota quo ceteros menandri tation in ne fabellas omnium instructior tollit laudem per ei. Ignota sed sit falli volumus possim omnis eligendi oratio commodo summo et nisl signiferumque.
-			</p>
-			</section>
-			<h3>
-				Where to download?
-			</h3>
-			<p>
-				Currently the application is in beta, but as soon as it is available check here for more information. 
-			</p>
-		</section>
-		</article>
-	</center>
-	<footer>
-		<h4>
-		Copyright Catalyst LLC
-		</h4>
-		<a>
-			Why ABC Plus
-		</a>
-		<a>
-			How to Use
-		</a>
-		<a>
-			Download
-		</a>
-		<a>
-			Contact
-		</a>
-	</footer>
+  <nav class="main-nav flex spc-btwn cntr-vert">
+    <h1 class="main-nav__header"><a href="#">Catalyst Childcare</a></h1>
+    <ul class="main-nav__links flex">
+      <li class="site-link"><a href="#">Why ABC Plus</a></li>
+      <li class="site-link"><a href="#">How to Use</a></li>
+      <li class="site-link"><a href="#">Download</a></li>
+      <li class="site-link"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="head" style="--r1: 130%; --r2: 71.5%">
+    <div class="container">
+      <h2 class="head__title">Lorem ipsum dolor sit amet consectetur.</h2>
+      <p class="head__subtitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.
+      </p>
+      <button
+        class="btn"
+        onclick="location.href='https://testflight.apple.com/join/8uGiLiSG'"
+      >
+        Download
+      </button>
+    </div>
+  </header>
+  <main>
+    <section id="about" class="about primary">
+      <div class="container flex cntr-vert spc-arnd">
+        <div class="about-img-container">
+          <div class="img-wrapper">
+            <!-- Photo by <a href="https://unsplash.com/@heyshashank?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shashank Verma</a> on <a href="https://unsplash.com/s/photos/child-tech?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   -->
+            <img
+              class="img"
+              src="assets/images/kid.jpg"
+              alt="child looking into phone"
+            />
+          </div>
+        </div>
+        <article class="about-text">
+          <h2 class="section-title">Why we built ABC Plus</h2>
+          <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            odit! Facilis, fuga. Enim voluptas quo possimus modi in cum impedit
+            itaque assumenda fugiat facilis tempora asperiores ex voluptate,
+            minus nemo. Modi nisi consequuntur, saepe eligendi pariatur dolor
+            fugit esse deserunt aut cupiditate repellendus nam, minima aperiam
+            error placeat laborum. Facere cupiditate dignissimos porro vitae
+            numquam, iste debitis ut qui minima quo quos temporibus fugiat
+            corporis ratione. Ratione maiores unde commodi ullam culpa
+            praesentium eligendi dicta eius quibusdam aliquid? Autem sint iusto
+            perspiciatis enim excepturi molestias omnis, tenetur reiciendis ex
+            totam dicta. Aut impedit veniam explicabo commodi iste!
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="how-to" class="how-to primary">
+      <div class="container">
+        <article>
+          <h2 class="section-title cntr-txt">
+            How you should use the ABC Plus
+          </h2>
+          <p class="section-text cntr-txt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+            quo porro, blanditiis totam dolorum mollitia. Similique quos
+            voluptates facere voluptatem dolorum quae mollitia obcaecati animi
+            provident corporis tenetur, numquam magnam maxime veniam magni
+            inventore fuga et asperiores blanditiis soluta. Odit vitae
+            inventore, cumque aperiam qui aspernatur architecto nihil sed omnis,
+            aliquid repudiandae eos laboriosam incidunt. Omnis suscipit libero
+            molestias quam! Porro praesentium excepturi fuga cum explicabo
+            debitis facere omnis, temporibus architecto mollitia asperiores
+            dicta esse tempora iusto nostrum! Non eaque magnam dolore, dolorem
+            ipsam natus. Libero dolor aliquam quibusdam vero at maxime tempore
+            repellat et optio, fuga delectus repellendus ullam corporis quasi
+            nemo! Cum enim consequatur quo sunt beatae numquam. Accusantium
+            dolor dolores suscipit culpa sapiente, ut fuga necessitatibus?
+            Placeat!
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="download" class="download primary">
+      <div class="container flex spc-arnd">
+        <div class="download-img-container">
+          <img src="#" alt="app store listing" />
+        </div>
+        <article>
+          <h2 class="section-title">Where to download?</h2>
+          <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            dolores aspernatur id?
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-nav">
+      <ul class="footer-nav__ul flex hrzn-right">
+        <li class="footer-nav__link"><a href="#">Why ABC Plus</a></li>
+        <li class="footer-nav__link"><a href="#">How to Use</a></li>
+        <li class="footer-nav__link"><a href="#">Download</a></li>
+        <li class="footer-nav__link"><a href="#">Contact</a></li>
+      </ul>
+    </section>
+    <div class="ftr-divide"></div>
+    <section class="footer-contact flex spc-btwn">
+      <small>&copy; Copyright Catalyst LLC</small>
+      <ul class="footer-contact__ul flex">
+        <li class="footer-contact__link">
+          <a href=""
+            ><img class="icon" src="assets/icons/instagram.svg" alt=""
+          /></a>
+        </li>
+        <li class="footer-contact__link">
+          <a href=""
+            ><img class="icon" src="assets/icons/twitter.svg" alt=""
+          /></a>
+        </li>
+        <li class="footer-contact__link">
+          <a href=""><img class="icon" src="assets/icons/fb.svg" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+  </footer>
 </body>

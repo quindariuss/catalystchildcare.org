@@ -1,0 +1,278 @@
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* Color Scheme */
+:root {
+  --primary-light: #f8f8ff;
+  --secondary-light: #f2f0ea;
+  --text-dark: #000;
+  --text-light: #f8f8ff;
+  --primary-accent: #3e7aca;
+  --gradient-dark: #0851b2;
+  --gradient-light: #3879d0;
+}
+
+/* Utilities */
+.container {
+  width: 95%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.hrzn-right {
+  justify-content: flex-end;
+}
+
+.cntr-vert {
+  align-items: center;
+}
+
+.cntr-txt {
+  text-align: center;
+}
+
+.rgt-text {
+  text-align: right;
+}
+
+.spc-btwn {
+  justify-content: space-between;
+}
+
+.spc-arnd {
+  justify-content: space-around;
+}
+
+/* General/Universal Styling */
+
+body {
+  font-size: 1.6rem;
+  background: var(--primary-light);
+}
+
+section.primary {
+  padding: 10rem 0;
+}
+
+/* Section Specific Styling */
+
+/* Nav */
+.main-nav {
+  padding: 2rem 8rem;
+}
+
+.main-nav__links .site-link {
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+/* Header */
+/* 
+header {
+  height: 300px;
+  color: ghostwhite;
+  background: radial-gradient(rgb(42, 100, 180), rgb(23, 84, 181));
+  -webkit-mask: radial-gradient(
+        var(--r1, 100%) var(--r2, 50%) at top,
+        white 79.5%,
+        transparent 80%
+      )
+      top left,
+    radial-gradient(
+        var(--r1, 100%) var(--r2, 50%) at bottom,
+        transparent 79.5%,
+        white 80%
+      )
+      top center,
+    radial-gradient(
+        var(--r1, 100%) var(--r2, 50%) at top,
+        white 79.5%,
+        transparent 80%
+      )
+      top right;
+  mask: radial-gradient(
+        var(--r1, 100%) var(--r2, 50%) at top,
+        white 79.5%,
+        transparent 80%
+      )
+      top left,
+    radial-gradient(
+        var(--r1, 100%) var(--r2, 50%) at bottom,
+        transparent 79.5%,
+        white 80%
+      )
+      top center,
+    radial-gradient(
+        var(--r1, 100%) var(--r2, 50%) at top,
+        white 79.5%,
+        transparent 80%
+      )
+      top right;
+  adjust the 150% to control the covered area, the bigger the value the bigger the area will be
+  -webkit-mask-size: 33.4% 150%;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 33.4% 150%;
+  mask-repeat: no-repeat;
+}
+*/
+
+header {
+  position: relative;
+  color: var(--text-light);
+  padding: 8rem 0 15rem 0;
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -50%;
+  width: 150%;
+  height: 100%;
+  border-bottom-left-radius: 100%;
+  background: linear-gradient(var(--gradient-dark), var(--gradient-light));
+}
+
+.head__title {
+  margin-bottom: 2rem;
+}
+
+.head__subtitle {
+  margin-bottom: 3rem;
+}
+
+header .btn {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2rem 6rem;
+  border-radius: 50px;
+  font-size: 2rem;
+}
+
+/* About */
+
+.about-img-container {
+  background: red;
+  flex: 0 1 300px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+article.about-text {
+  flex: 0 0 50%;
+}
+
+.img-wrapper {
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+}
+
+/* How To */
+.how-to {
+  position: relative;
+}
+
+.how-to:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -25%;
+  width: 150%;
+  height: 100%;
+  background: var(--secondary-light);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/* Download */
+.download-img-container {
+  background: red;
+  flex: 0 1 300px;
+  height: 300px;
+}
+
+section.download {
+  padding-bottom: 0;
+}
+
+/* p {
+  max-width: 500;
+} */
+
+/* img {
+  max-width: 500;
+  width: 75%;
+} */
+
+/* Footer */
+
+footer {
+  background: var(--primary-accent);
+  color: var(--text-light);
+}
+
+.footer-nav,
+.footer-contact {
+  padding: 1rem 8rem;
+}
+
+.footer-nav__link {
+  margin: 0 2rem;
+}
+
+.footer-contact__link {
+  margin: 0 1rem;
+}
+
+.ftr-divide {
+  height: 2px;
+  background: var(--primary-light);
+  margin: 0.5rem 0;
+}
+
+.icon {
+  width: 25px;
+}
