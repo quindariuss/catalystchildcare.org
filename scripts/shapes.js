@@ -10,7 +10,7 @@ for (let x = 0; x < 2; x++) {
 			shape.className = 'bg-shape'
 			// IF x == 0 We're in Head section 
 			// ELSE We're in About section
-			shape.src = `assets/images/shapes/${!x ? shapeImg : shapeImg+'-white'}.png`;
+			shape.src = `assets/images/shapes/${!x ? shapeImg : shapeImg+'-grey'}.png`;
 			let section = !x ? 'head' : 'about'
 			document.getElementById(section).appendChild(shape)
 			// get the dimensions of section
