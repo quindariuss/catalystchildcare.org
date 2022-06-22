@@ -4,10 +4,17 @@
   padding: 0;
 }
 
+:root {
+  --header-font: 'Lora', serif;
+	--header-font-alt: 'Varela Round', sans-serif;
+	--primary-font: 'Open Sans', sans-serif;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   overflow-x: hidden;
+	font-family: var(--primary-font);
 }
 
 *,
@@ -60,6 +67,10 @@ li {
   justify-content: flex-end;
 }
 
+.cntr-hrz {
+  justify-content: center;
+}
+
 .cntr-vert {
   align-items: center;
 }
@@ -80,6 +91,15 @@ li {
   justify-content: space-around;
 }
 
+.grid {
+	display: grid;
+}
+
+.primary-layout {
+	grid-template-columns: 350px 1fr;
+	gap: 70px;
+}
+
 /* General/Universal Styling */
 
 body {
@@ -96,11 +116,21 @@ section.primary {
 /* Nav */
 .main-nav {
   padding: 2rem 8rem;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	z-index: 100;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.20);
 }
 
 .main-nav__links .site-link {
-  margin: 0 1rem;
-  font-size: 2rem;
+  margin: 0 1.8rem;
+  font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.site-link:last-child {
+  margin-right: 0px;
 }
 
 header {
@@ -123,6 +153,7 @@ header:after {
 
 .head__title {
   margin-bottom: 2rem;
+	font-family: var(--header-font-alt);
 }
 
 .head__subtitle {
@@ -131,31 +162,29 @@ header:after {
 
 header .btn {
   background: rgba(255, 255, 255, 0.5);
-  padding: 2rem 6rem;
+  padding: 1.3rem 4rem;
   border-radius: 50px;
   font-size: 2rem;
+	cursor: pointer;
+	transition: all 0.5s ease;
 }
 
+header .btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
 /* About */
 
 .about-img-container {
-  flex: 0 1 300px;
-  border-radius: 100%;
-  overflow: hidden;
+	width: 100%;
 }
 
 article.about-text {
   flex: 0 0 50%;
 }
 
-.img-wrapper {
-  padding-bottom: 100%;
-  position: relative;
-}
-
 .img {
-  position: absolute;
-  width: 100%;
+  max-width: 300px;
+	max-height: 300px;
 }
 
 /* How To */
@@ -176,10 +205,23 @@ article.about-text {
   border-bottom-right-radius: 50%;
 }
 
+.how-to > div {
+	width: 60%;
+}
+
 /* Download */
 .download-img-container {
   flex: 0 1 300px;
   height: 300px;
+}
+
+.section-title {
+	font-family: var(--header-font);
+	margin-bottom: 30px;
+}
+
+.section-text {
+	line-height: 35px;
 }
 
 section.download {
@@ -202,7 +244,9 @@ footer {
   color: var(--text-light);
 }
 
-.footer-nav,
+.footer-nav{
+	padding: 1.5rem 8rem;
+}
 .footer-contact {
   padding: 1rem 8rem;
 }
@@ -211,8 +255,14 @@ footer {
   margin: 0 2rem;
 }
 
+
 .footer-contact__link {
   margin: 0 1rem;
+}
+
+.footer-nav__link:last-child, 
+.footer-contact__link:last-child {
+  margin-right: 0px;
 }
 
 .ftr-divide {
