@@ -7,6 +7,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:wght@300;400&family=Varela+Round&display=swap"
     rel="stylesheet"
+    crossorigin="anonymous"
   />
 </head>
 <body>
@@ -134,23 +135,34 @@
       </ul>
     </section>
     <div class="ftr-divide"></div>
-    <section class="footer-contact flex spc-btwn">
+    <section class="footer-contact flex spc-btwn cntr-vert">
       <small>&copy; Copyright Catalyst LLC</small>
-      <ul class="footer-contact__ul flex">
-        <li class="footer-contact__link">
-          <a href=""
-            ><img class="icon" src="assets/icons/instagram.svg" alt=""
-          /></a>
-        </li>
-        <li class="footer-contact__link">
-          <a href=""
-            ><img class="icon" src="assets/icons/twitter.svg" alt=""
-          /></a>
-        </li>
-        <li class="footer-contact__link">
-          <a href=""><img class="icon" src="assets/icons/fb.svg" alt="" /></a>
-        </li>
-      </ul>
+      <div class="footer-docs__links flex">
+        <ul class="footer-contact__ul flex">
+          <li class="footer-docs__link flex cntr-vert">
+            <a href="#"><small>Privacy Policy</small></a>
+          </li>
+          <li class="footer-docs__link flex cntr-vert">
+            <a href=""><small>Terms of Use</small></a>
+          </li>
+        </ul>
+
+        <ul class="footer-contact__ul flex">
+          <li class="footer-contact__link flex">
+            <a href=""
+              ><img class="icon" src="assets/icons/instagram.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer-contact__link flex cntr-vert">
+            <a href=""
+              ><img class="icon" src="assets/icons/twitter.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer-contact__link flex cntr-vert">
+            <a href=""><img class="icon" src="assets/icons/fb.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
     </section>
   </footer>
 </body>
