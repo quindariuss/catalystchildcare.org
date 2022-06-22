@@ -103,6 +103,11 @@ section.primary {
   font-size: 2rem;
 }
 
+.abc-nav-icon {
+    max-width: 75px;
+    border-radius: 10px;
+}
+
 header {
   position: relative;
   color: var(--text-light);
