@@ -67,6 +67,10 @@ li {
   justify-content: flex-end;
 }
 
+.hrzn-left {
+    justify-content: flex-start;
+}
+
 .cntr-hrz {
   justify-content: center;
 }
@@ -275,8 +279,12 @@ footer {
   margin: 0 2rem;
 }
 
+.footer-docs__link:first-child {
+    margin-left: 0px;
+}
 
-.footer-contact__link {
+.footer-contact__link,
+.footer-docs__link {
   margin: 0 1rem;
 }
 
