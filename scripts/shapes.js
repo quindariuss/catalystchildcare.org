@@ -1,6 +1,7 @@
 // array of shape image file names (assets/images/shapes)
 const about = ['pentagon', 'circle', 'triangle'];
 
+
 // Looping twice (two sections: head, about) - sections we need to place shapes to
 for (let x = 0; x < 2; x++) {
 	// Looping through each shape image file
@@ -14,6 +15,7 @@ for (let x = 0; x < 2; x++) {
 			shape.src = `assets/images/shapes/${!x ? shapeImg : shapeImg+'-grey'}.png`;
 			let section = !x ? 'head' : 'about'
 			document.getElementById(section).appendChild(shape)
+
 
 			// get the dimensions of section
 			var sectionWidth = document.getElementById(section).offsetWidth;
