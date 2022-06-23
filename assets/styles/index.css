@@ -111,6 +111,11 @@ section.primary {
   padding: 10rem 0;
 }
 
+.bg-shape{
+	position: absolute;
+	z-index: -1;
+}
+
 /* Section Specific Styling */
 
 /* Nav */
@@ -148,13 +153,17 @@ header {
 header:after {
   content: '';
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: 0;
   left: -50%;
   width: 150%;
   height: 100%;
   border-bottom-left-radius: 100%;
   background: linear-gradient(var(--gradient-dark), var(--gradient-light));
+}
+
+.head {
+	position: relative;
 }
 
 .head__title {
@@ -179,6 +188,10 @@ header .btn:hover {
   background: rgba(255, 255, 255, 0.3);
 }
 /* About */
+
+.about {
+	position: relative;
+}
 
 .about-img-container {
 	width: 100%;
