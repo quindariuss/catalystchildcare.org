@@ -134,6 +134,13 @@ section.primary {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
+.main-nav__logo {
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 1.5rem;
+}
+
 .main-nav__links .site-link {
   margin: 0 1.8rem;
   font-size: 1.8rem;
