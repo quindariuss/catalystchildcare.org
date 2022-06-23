@@ -137,6 +137,12 @@ section.primary {
   margin-right: 0px;
 }
 
+.abc-nav-icon {
+    max-width: 75px;
+    border-radius: 11px;
+    margin: 0 1rem;
+}
+
 header {
   position: relative;
   color: var(--text-light);
