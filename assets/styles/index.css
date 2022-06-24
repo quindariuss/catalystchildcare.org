@@ -318,6 +318,16 @@ article.about-text {
   line-height: 35px;
 }
 
+.download .section-text {
+  margin-bottom: 2rem;
+}
+
+.download-img-anchor img {
+  max-width: 160px;
+  padding: 0;
+  vertical-align: bottom;
+}
+
 section.download {
   padding-bottom: 0;
 }
