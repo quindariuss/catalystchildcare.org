@@ -9,6 +9,7 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: var(--primary-font);
+  scroll-behavior: smooth;
 }
 
 *,
@@ -104,6 +105,60 @@ li {
   gap: 70px;
 }
 
+/* Components */
+
+/* Burger */
+.burger {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  z-index: 999;
+  display: none;
+}
+
+.burger__line {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  height: 2px;
+  background: var(--text-dark);
+  border-radius: 3px;
+  transition: transform 0.5s linear, background 0.5s linear;
+}
+
+.burger__line:before,
+.burger__line:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 3px;
+  transition: transform 0.5s linear, background 0.5s linear;
+}
+
+.burger__line:before {
+  top: -10px;
+}
+
+.burger__line:after {
+  bottom: -10px;
+}
+
+.burger.active .burger__line {
+  transform: rotate(45deg);
+}
+
+.burger.active .burger__line::before {
+  transform: translateY(10px) rotate(90deg);
+}
+
+.burger.active .burger__line::after {
+  transform: translateY(-10px) rotate(360deg);
+}
+
 /* General/Universal Styling */
 
 body {
@@ -126,7 +181,8 @@ section.primary {
 /* Nav */
 .main-nav {
   padding: 2rem 8rem;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: white;
   z-index: 100;
@@ -139,6 +195,10 @@ section.primary {
   height: auto;
   border-radius: 10px;
   margin-right: 1.5rem;
+}
+
+.main-nav__links {
+  transition: height 0.5s ease-in-out;
 }
 
 .main-nav__links .site-link {
@@ -161,6 +221,8 @@ header {
   position: relative;
   color: var(--text-light);
   padding: 8rem 0 15rem 0;
+  /* clears way for nav */
+  margin-top: 90px;
 }
 
 header:after {
@@ -256,6 +318,16 @@ article.about-text {
   line-height: 35px;
 }
 
+.download .section-text {
+  margin-bottom: 2rem;
+}
+
+.download-img-anchor img {
+  max-width: 160px;
+  padding: 0;
+  vertical-align: bottom;
+}
+
 section.download {
   padding-bottom: 0;
 }
@@ -337,16 +409,31 @@ footer {
 
 @media (max-width: 768px) {
   .main-nav {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    padding: 2rem 2rem;
     gap: 10px;
   }
 
   .main-nav > ul {
-    display: none;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 90px;
+    background: white;
+    left: 0;
+    text-align: center;
+    row-gap: 20px;
+    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
   }
 
-  .main-nav {
-    padding: 2rem 2rem;
+  .burger.active + .main-nav__links {
+    height: 200px;
+  }
+
+  .burger {
+    display: inherit;
   }
 
   .how-to:after {
