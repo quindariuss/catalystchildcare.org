@@ -322,6 +322,10 @@ article.about-text {
   margin-bottom: 2rem;
 }
 
+.download-img-anchor {
+  display: inline-block;
+}
+
 .download-img-anchor img {
   max-width: 160px;
   padding: 0;
@@ -383,6 +387,8 @@ footer {
   width: 25px;
 }
 
+/* Media Queries */
+
 @media (max-width: 992px) {
   .main-nav {
     padding: 2rem;
@@ -400,6 +406,10 @@ footer {
 
   .how-to > div {
     width: 85%;
+  }
+
+  .download-img-anchor {
+    margin-bottom: 4rem;
   }
 
   .footer-nav__ul {
