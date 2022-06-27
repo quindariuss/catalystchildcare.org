@@ -68,9 +68,7 @@ li {
   justify-content: flex-end;
 }
 
-.hrzn-left {
-  justify-content: flex-start;
-}
+
 
 .cntr-hrz {
   justify-content: center;
@@ -199,6 +197,12 @@ section.primary {
 
 .main-nav__links {
   transition: height 0.5s ease-in-out;
+}
+
+.nav-logo {
+    max-width: 75px; 
+    border-radius: 11px; 
+    margin: 15px
 }
 
 .main-nav__links .site-link {
