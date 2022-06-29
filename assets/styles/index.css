@@ -114,6 +114,7 @@ section.primary {
 .bg-shape{
 	position: absolute;
 	z-index: -1;
+	fill: transparent;
 }
 
 /* Section Specific Styling */
