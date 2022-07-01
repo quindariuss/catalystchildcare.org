@@ -408,6 +408,10 @@ footer {
   .main-nav__links .site-link {
     margin: 0 0.6rem;
   }
+	.head_img {
+		width: 320px;
+		height: 230px;
+	}
 
   .primary-layout {
     grid-template-columns: 1fr;
