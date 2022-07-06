@@ -105,6 +105,10 @@ li {
   gap: 70px;
 }
 
+.nav-right > :last-child {
+	margin-right: 0px;
+}
+
 /* Components */
 
 /* Burger */
@@ -174,6 +178,7 @@ section.primary {
 .bg-shape {
   position: absolute;
   z-index: -1;
+	fill: transparent;
 }
 
 /* Section Specific Styling */
@@ -207,10 +212,6 @@ section.primary {
   font-weight: 300;
 }
 
-.site-link:last-child {
-  margin-right: 0px;
-}
-
 .abc-nav-icon {
   max-width: 75px;
   border-radius: 11px;
@@ -239,6 +240,17 @@ header:after {
 
 .head {
   position: relative;
+}
+
+.head > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.head_img {
+	width: 450px;
+	height: 325px;
 }
 
 .head__title {
@@ -372,11 +384,6 @@ footer {
   margin: 0 1rem;
 }
 
-.footer-nav__link:last-child,
-.footer-contact__link:last-child {
-  margin-right: 0px;
-}
-
 .ftr-divide {
   height: 2px;
   margin: 0.5rem 0;
@@ -397,6 +404,10 @@ footer {
   .main-nav__links .site-link {
     margin: 0 0.6rem;
   }
+	.head_img {
+		width: 320px;
+		height: 230px;
+	}
 
   .primary-layout {
     grid-template-columns: 1fr;
@@ -458,6 +469,10 @@ footer {
     text-align: center;
   }
 
+	.head > div > :last-child {
+		display: none;
+	}
+
   .download .container {
     width: 100%;
   }
@@ -471,4 +486,5 @@ footer {
   .footer-nav__ul > li {
     margin: 0;
   }
+
 }
