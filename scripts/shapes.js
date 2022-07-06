@@ -38,4 +38,28 @@ for (let x = 0; x < 2; x++) {
 // function that returns a random number between a min and max
 function getRandomNumber(min, max) {
 	return Math.random() * (max - min) + min;
-};
+}
+// generate shapes on lending
+generateShapes();
+
+// toggler that delays frequent shape regeneration
+let toggleShapesGeneration = true;
+
+window.addEventListener('resize', function() {
+	const shapes = document.getElementsByClassName('bg-shape');
+	
+	if(toggleShapesGeneration){
+		// toggle to delay shape regeneration
+		toggleShapesGeneration = !toggleShapesGeneration
+		// remove all previous shapes
+		while(shapes.length > 0){
+			shapes[0].parentNode.removeChild(shapes[0]);
+		}
+		// generate new shapes
+		generateShapes();
+		// allow shape regeneration 
+		setTimeout(() => {
+			toggleShapesGeneration = !toggleShapesGeneration
+		}, 500);
+	};
+}, true);
