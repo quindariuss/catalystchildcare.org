@@ -316,15 +316,23 @@ article.about-text {
 }
 
 /* Download */
+.download .container {
+  padding-bottom: 4rem;
+}
+
 .download-img-container {
   flex: 0 1 300px;
-  height: 300px;
 }
 
 .download-img {
-  width: 95%;
+  width: 98%;
   margin: auto;
   max-width: 375px;
+}
+
+.download-requirements {
+  display: block;
+  margin-top: 1rem;
 }
 
 .section-title {
@@ -414,6 +422,10 @@ footer {
 
   .how-to > div {
     width: 85%;
+  }
+
+  .download .container {
+    padding-bottom: 0;
   }
 
   .download-img-anchor {
