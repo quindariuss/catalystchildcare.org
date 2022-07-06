@@ -105,6 +105,10 @@ li {
   gap: 70px;
 }
 
+.nav-right > :last-child {
+	margin-right: 0px;
+}
+
 /* Components */
 
 /* Burger */
@@ -174,6 +178,7 @@ section.primary {
 .bg-shape {
   position: absolute;
   z-index: -1;
+	fill: transparent;
 }
 
 /* Section Specific Styling */
@@ -205,10 +210,6 @@ section.primary {
   margin: 0 1.8rem;
   font-size: 1.8rem;
   font-weight: 300;
-}
-
-.site-link:last-child {
-  margin-right: 0px;
 }
 
 .abc-nav-icon {
@@ -381,11 +382,6 @@ footer {
 .footer-contact__link,
 .footer-docs__link {
   margin: 0 1rem;
-}
-
-.footer-nav__link:last-child,
-.footer-contact__link:last-child {
-  margin-right: 0px;
 }
 
 .ftr-divide {
