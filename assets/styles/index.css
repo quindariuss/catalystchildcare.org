@@ -354,15 +354,6 @@ section.download {
   padding-bottom: 0;
 }
 
-/* p {
-  max-width: 500;
-} */
-
-/* img {
-  max-width: 500;
-  width: 75%;
-} */
-
 /* Footer */
 
 footer {
@@ -436,7 +427,6 @@ footer {
 
 @media (max-width: 768px) {
   .main-nav {
-    /* justify-content: flex-start; */
     padding: 2rem 2rem;
     gap: 10px;
   }
@@ -463,9 +453,12 @@ footer {
     display: inherit;
   }
 
+  .how-to {
+    background: var(--primary-light);
+  }
+
   .how-to:after {
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+    display: none;
   }
 
   .head > .container {
