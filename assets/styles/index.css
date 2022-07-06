@@ -241,6 +241,17 @@ header:after {
   position: relative;
 }
 
+.head > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.head_img {
+	width: 450px;
+	height: 325px;
+}
+
 .head__title {
   margin-bottom: 2rem;
   font-family: var(--header-font-alt);
@@ -397,6 +408,10 @@ footer {
   .main-nav__links .site-link {
     margin: 0 0.6rem;
   }
+	.head_img {
+		width: 320px;
+		height: 230px;
+	}
 
   .primary-layout {
     grid-template-columns: 1fr;
@@ -458,6 +473,10 @@ footer {
     text-align: center;
   }
 
+	.head > div > :last-child {
+		display: none;
+	}
+
   .download .container {
     width: 100%;
   }
@@ -471,4 +490,5 @@ footer {
   .footer-nav__ul > li {
     margin: 0;
   }
+
 }
