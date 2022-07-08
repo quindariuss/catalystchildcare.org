@@ -106,7 +106,7 @@ li {
 }
 
 .nav-right > :last-child {
-	margin-right: 0px;
+  margin-right: 0px;
 }
 
 /* Components */
@@ -178,7 +178,7 @@ section.primary {
 .bg-shape {
   position: absolute;
   z-index: -1;
-	fill: transparent;
+  fill: transparent;
 }
 
 /* Section Specific Styling */
@@ -243,14 +243,14 @@ header:after {
 }
 
 .head > div {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .head_img {
-	width: 450px;
-	height: 325px;
+  width: 450px;
+  height: 325px;
 }
 
 .head__title {
@@ -316,9 +316,23 @@ article.about-text {
 }
 
 /* Download */
+.download .container {
+  padding-bottom: 4rem;
+}
+
 .download-img-container {
   flex: 0 1 300px;
-  height: 300px;
+}
+
+.download-img {
+  width: 98%;
+  margin: auto;
+  max-width: 375px;
+}
+
+.download-requirements {
+  display: block;
+  margin-top: 1rem;
 }
 
 .section-title {
@@ -347,15 +361,6 @@ article.about-text {
 section.download {
   padding-bottom: 0;
 }
-
-/* p {
-  max-width: 500;
-} */
-
-/* img {
-  max-width: 500;
-  width: 75%;
-} */
 
 /* Footer */
 
@@ -404,10 +409,10 @@ footer {
   .main-nav__links .site-link {
     margin: 0 0.6rem;
   }
-	.head_img {
-		width: 320px;
-		height: 230px;
-	}
+  .head_img {
+    width: 320px;
+    height: 230px;
+  }
 
   .primary-layout {
     grid-template-columns: 1fr;
@@ -417,6 +422,10 @@ footer {
 
   .how-to > div {
     width: 85%;
+  }
+
+  .download .container {
+    padding-bottom: 0;
   }
 
   .download-img-anchor {
@@ -430,7 +439,6 @@ footer {
 
 @media (max-width: 768px) {
   .main-nav {
-    /* justify-content: flex-start; */
     padding: 2rem 2rem;
     gap: 10px;
   }
@@ -457,9 +465,12 @@ footer {
     display: inherit;
   }
 
+  .how-to {
+    background: var(--primary-light);
+  }
+
   .how-to:after {
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+    display: none;
   }
 
   .head > .container {
@@ -469,9 +480,9 @@ footer {
     text-align: center;
   }
 
-	.head > div > :last-child {
-		display: none;
-	}
+  .head > div > :last-child {
+    display: none;
+  }
 
   .download .container {
     width: 100%;
@@ -486,5 +497,4 @@ footer {
   .footer-nav__ul > li {
     margin: 0;
   }
-
 }
