@@ -10,6 +10,7 @@ html {
   overflow-x: hidden;
   font-family: var(--primary-font);
   scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
 }
 
 *,
@@ -360,6 +361,55 @@ article.about-text {
 
 section.download {
   padding-bottom: 0;
+}
+
+/* Terms of Servicce */
+
+.container.tos {
+  padding-top: 9rem;
+  max-width: 800px;
+}
+
+.tos h2 {
+  margin-bottom: 2.5rem;
+}
+
+.tos p {
+  margin-bottom: 2rem;
+}
+
+.tos .toc {
+  margin-bottom: 2rem;
+}
+
+.toc ul {
+  text-indent: 1rem;
+  padding-left: 2rem;
+}
+
+.toc li {
+  list-style: decimal;
+  margin-bottom: 0.2rem;
+}
+
+.toc a {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.toc a:link,
+.toc a:visited {
+  color: var(--primary-accent);
+}
+
+.tos ul.copyright {
+  padding-left: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.tos ul.copyright li {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 /* Footer */
