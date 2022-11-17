@@ -32,8 +32,14 @@ button {
   font-size: inherit;
 }
 
-li {
-  list-style: none;
+ul {
+  list-style: none
+}
+
+aside {
+  padding: 10px;
+  font-style: italic;
+  font-size: smaller;
 }
 
 /* Color Scheme */
